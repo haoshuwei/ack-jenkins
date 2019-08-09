@@ -32,7 +32,12 @@ Update Complete.
 
 ### 2. install jenkins helm chart
 
-update values.yaml before install jenkins, such as the `AdminPassword` key.
+get `values.yaml` template:
+```
+$ curl -LO https://raw.githubusercontent.com/haoshuwei/ack-jenkins/master/values.yaml
+```
+
+update `values.yaml` before install jenkins, such as the `AdminPassword` key.
 
 then install jenkins using command like below:
 ```
